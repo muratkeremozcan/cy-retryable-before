@@ -43,11 +43,11 @@
     "@cypress/skip-test": "^2.6.1",
     "@esbuild-plugins/node-globals-polyfill": "0.2.3",
     "@esbuild-plugins/node-modules-polyfill": "0.2.2",
-    "@faker-js/faker": "9.5.0",
+    "@faker-js/faker": "9.5.1",
     "@mockoon/cli": "9.1.0",
     "@types/jest": "29.5.14",
-    "@types/lodash": "4.17.15",
-    "@types/node": "22.13.5",
+    "@types/lodash": "4.17.16",
+    "@types/node": "22.13.8",
     "@typescript-eslint/eslint-plugin": "8.25.0",
     "@typescript-eslint/parser": "8.25.0",
     "cypress": "14.1.0",
@@ -71,6 +71,6 @@
     "prettier": "3.5.2",
     "ts-jest": "29.2.6",
     "tsx": "^4.19.1",
-    "typescript": "5.7.3"
+    "typescript": "5.8.2"
   }
 }
