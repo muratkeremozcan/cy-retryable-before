@@ -53,7 +53,7 @@
     "cypress": "14.4.1",
     "cy-spok": "1.6.2",
     "cypress-data-session": "2.8.7",
-    "cypress-map": "1.48.1",
+    "cypress-map": "1.49.0",
     "cypress-recurse": "^1.35.3",
     "dotenv": "16.5.0",
     "eslint": "8.57.1",
@@ -69,7 +69,7 @@
     "lodash": "4.17.21",
     "npm-run-all2": "8.0.4",
     "prettier": "3.5.3",
-    "ts-jest": "29.3.4",
+    "ts-jest": "29.4.0",
     "tsx": "^4.19.1",
     "typescript": "5.8.3"
   }
