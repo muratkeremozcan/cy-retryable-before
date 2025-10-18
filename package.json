@@ -52,7 +52,7 @@
     "@typescript-eslint/parser": "8.46.1",
     "cypress": "15.5.0",
     "cy-spok": "1.6.3",
-    "cypress-data-session": "2.8.7",
+    "cypress-data-session": "2.8.8",
     "cypress-map": "1.53.1",
     "cypress-recurse": "^1.35.3",
     "dotenv": "17.2.3",
