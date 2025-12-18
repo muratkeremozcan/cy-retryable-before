@@ -50,7 +50,7 @@
     "@types/node": "24.10.4",
     "@typescript-eslint/eslint-plugin": "8.50.0",
     "@typescript-eslint/parser": "8.50.0",
-    "cypress": "15.7.1",
+    "cypress": "15.8.0",
     "cy-spok": "1.7.0",
     "cypress-data-session": "2.8.8",
     "cypress-map": "1.55.2",
