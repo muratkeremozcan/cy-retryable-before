@@ -50,7 +50,7 @@
     "@types/node": "24.12.2",
     "@typescript-eslint/eslint-plugin": "8.58.2",
     "@typescript-eslint/parser": "8.58.2",
-    "cypress": "15.13.1",
+    "cypress": "15.14.0",
     "cy-spok": "1.7.0",
     "cypress-data-session": "3.0.0",
     "cypress-map": "1.56.0",
@@ -71,6 +71,6 @@
     "prettier": "3.8.3",
     "ts-jest": "29.4.9",
     "tsx": "^4.19.1",
-    "typescript": "6.0.2"
+    "typescript": "6.0.3"
   }
 }
