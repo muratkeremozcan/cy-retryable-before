@@ -5,8 +5,12 @@ on:
     tags:
       - 'v*.*.*'
 
-env:
-  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+# Trusted publishing: npm exchanges this job's OIDC token for a short-lived
+# credential, so no NPM_TOKEN secret exists to leak. --provenance then attaches a
+# signed attestation tying the tarball to this workflow and commit.
+permissions:
+  contents: read
+  id-token: write
 
 jobs:
   build-and-publish:
@@ -26,14 +30,19 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           registry-url: 'https://registry.npmjs.org/'
 
-      # 4. Install dependencies
+      # 4. Trusted publishing needs npm 11.5.1 or newer, which Node 24 does not
+      #    necessarily ship.
+      - name: Ensure a trusted-publishing npm
+        run: npm install --global npm@latest
+
+      # 5. Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # 5. Build the project
+      # 6. Build the project
       - name: Build
         run: npm run build
 
-      # 6. Publish to npm
+      # 7. Publish to npm
       - name: Publish
-        run: npm publish --access public
+        run: npm publish --access public --provenance
